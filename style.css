@@ -11,14 +11,29 @@ body {
 .text {
   font-size: 1.4rem;
   font-weight: bold;
-}
-.text-color {
   color: blue;
 }
-.text-color:hover {
+
+.text:hover {
   color: black;
   cursor: pointer;
 }
-img {
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.but-change {
+  background-color: white;
+  border: 0;
+}
+.img-description {
+  display: block;
+  margin: 0 auto;
+}
+.img-description {
   display: none;
+}
+.text:active + .img-description,
+.but-change:active + .img-description {
+  display: block;
 }
