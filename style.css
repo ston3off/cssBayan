@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+}
+.container {
+  max-width: 50%;
+  margin: 0 auto;
+}
+.main-heading {
+  font-size: 4rem;
+}
