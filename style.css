@@ -25,15 +25,40 @@ body {
 .but-change {
   background-color: white;
   border: 0;
-}
-.img-description {
-  display: block;
-  margin: 0 auto;
+  cursor: pointer;
 }
 .img-description {
   display: none;
+  margin: 0 auto;
 }
-.text:active + .img-description,
-.but-change:active + .img-description {
+.but-change:hover + .img-description,
+.text:hover + .img-description {
   display: block;
+}
+
+@media (min-width: 820px) and (max-width: 1170px) {
+  .container {
+    max-width: 80%;
+  }
+  .main-heading {
+    font-size: 2.4rem;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 568px) {
+  .container {
+    max-width: 100%;
+  }
+  .main-heading {
+    font-size: 2rem;
+  }
+  .img-description {
+    width: 280px;
+    height: 300px;
+  }
+  .text {
+    font-size: 1rem;
+  }
 }
